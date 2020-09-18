@@ -29,37 +29,40 @@ img {
 
 body {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 8em;
 }
 
 .logo {
   grid-column: 1 / -1;
-  grid-row: 2;
+  grid-row: 1;
+  margin: 1rem;
   width: 14rem;
   z-index: 1;
 }
 
 .pano {
   grid-column: 1 / -1;
-  grid-row: 1 / -1;
+  grid-row: 2 / -1;
 }
 
 nav ul {
   display: flex;
   font-family: "Patua One", sans serif;
   font-size: 2rem;
+  grid-column: 1;
+  grid-row: 1;
   justify-content:flex-end;
   list-style-type: none;
   z-index: 1;
 }
 
 nav a {
+  color: #fff;
   padding: 1rem;
 }
 
@@ -68,7 +71,16 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+main figure {
+  margin: 1rem;
+}
+
 main h2 {
   color: #30658d;
   font-family: "Patua One", sans serif;
+  margin: 1rem 0 0 0;
+}
+
+main p {
+  margin: 0;
 }
