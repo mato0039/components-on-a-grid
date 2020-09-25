@@ -13,7 +13,7 @@ html {
   text-size-adjust: 100%;
 
   background-color: #f2f1ed;
-  font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
   line-height: 1.5;
 }
 
@@ -33,7 +33,7 @@ body {
   grid-template-areas:
     "first"
     "second";
-  margin: 0
+  margin: 0;
 }
 
 header {
@@ -46,7 +46,8 @@ header {
   align-self: flex-end;
   grid-column: 1 / -1;
   grid-row: 2;
-  margin: 1rem 1rem 0 1rem;
+  margin: 1rem 1rem 0;
+  padding: 0 0 2rem 1rem;
   width: 14rem;
   z-index: 1;
 }
@@ -54,7 +55,7 @@ header {
 .pano {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  margin: 1rem;
+  margin: 1rem 1rem 0;
 }
 
 nav {
@@ -67,7 +68,7 @@ nav ul {
   font-size: 2rem;
   grid-column: 2;
   grid-row: 1;
-  justify-content:flex-end;
+  justify-content: flex-end;
   list-style-type: none;
   z-index: 1;
 }
