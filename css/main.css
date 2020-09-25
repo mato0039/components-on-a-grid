@@ -30,11 +30,15 @@ img {
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "first"
+    "second"
 }
 
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+  grid-area: first;
 }
 
 .logo {
@@ -75,6 +79,7 @@ nav a {
 main {
   display: contents;
   grid-template-columns: 1fr 1fr;
+  grid-area: second;
 }
 
 main figure {
